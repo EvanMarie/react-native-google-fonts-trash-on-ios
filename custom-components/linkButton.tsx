@@ -11,7 +11,7 @@ import CustomAlert from "./alert";
 import CustomButton from "./button";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import BouncingDots from "./bouncingDots";
-import { boldAccent } from "@/constants/FontVariables";
+import { boldAccentFont } from "@/constants/FontVariables";
 
 type paramsType = { [key: string]: string };
 
@@ -104,9 +104,8 @@ export default function MyLinkButton({
                   {
                     color: color,
                     borderRadius: 25,
-                    fontFamily: boldAccent,
-                    paddingTop: 5,
-                    paddingBottom: 0,
+                    fontFamily: boldAccentFont,
+                    paddingVertical: 2,
                   },
                   textShadows.glow100Lg,
                 ]}

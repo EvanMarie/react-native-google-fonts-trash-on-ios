@@ -7,7 +7,7 @@ import { borders } from "@/constants/BorderStyles";
 import { Ionicons } from "@expo/vector-icons";
 import BouncingDots from "./bouncingDots";
 import CustomAlert from "./alert";
-import { boldAccent } from "@/constants/FontVariables";
+import { boldAccentFont } from "@/constants/FontVariables";
 
 interface CustomButtonProps {
   onPress?: () => void;
@@ -102,9 +102,8 @@ export default function MyButton({
                 {
                   color: color,
                   borderRadius: 25,
-                  fontFamily: boldAccent,
-                  paddingTop: 5,
-                  paddingBottom: 0,
+                  fontFamily: boldAccentFont,
+                  paddingVertical: 2,
                 },
                 textShadows.glow100Lg,
               ]}

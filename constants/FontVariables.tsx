@@ -1,4 +1,2 @@
-export const mediumAccent = "Kufam_500Medium";
-export const semiBoldAccent = "Kufam_600SemiBold";
-export const boldAccent = "Kufam_700Bold";
-export const extraBoldAccent = "Kufam_800ExtraBold";
+export const accentFont = "Play_400Regular";
+export const boldAccentFont = "Play_700Bold";

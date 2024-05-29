@@ -6,7 +6,7 @@ import { col } from "@/constants/Colors";
 import { boxShadows } from "@/constants/ShadowStyles";
 import Spacer from "./spacer";
 import { MyComponentView } from "./componentView";
-import { semiBoldAccent } from "@/constants/FontVariables";
+import { boldAccentFont } from "@/constants/FontVariables";
 
 export function MyCollapsible({
   children,
@@ -66,7 +66,7 @@ export function MyCollapsible({
         />
         <HeadingLg
           style={{ color: col[200], padding: 5, paddingTop: 10 }}
-          fontFamily={semiBoldAccent}
+          fontFamily={boldAccentFont}
         >
           {title}
         </HeadingLg>

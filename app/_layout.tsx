@@ -12,19 +12,9 @@ import { Platform } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import {
   useFonts,
-  Kufam_400Regular_Italic,
-  Kufam_400Regular,
-  Kufam_500Medium_Italic,
-  Kufam_500Medium,
-  Kufam_600SemiBold_Italic,
-  Kufam_600SemiBold,
-  Kufam_700Bold_Italic,
-  Kufam_700Bold,
-  Kufam_800ExtraBold_Italic,
-  Kufam_800ExtraBold,
-  Kufam_900Black_Italic,
-  Kufam_900Black,
-} from "@expo-google-fonts/kufam";
+  Play_400Regular,
+  Play_700Bold,
+} from "@expo-google-fonts/play";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 SplashScreen.preventAutoHideAsync();
@@ -46,18 +36,8 @@ export type RootStackParamList = {
 
 export default function RootLayout() {
   let [fontsLoaded] = useFonts({
-    Kufam_400Regular_Italic,
-    Kufam_400Regular,
-    Kufam_500Medium_Italic,
-    Kufam_500Medium,
-    Kufam_600SemiBold_Italic,
-    Kufam_600SemiBold,
-    Kufam_700Bold_Italic,
-    Kufam_700Bold,
-    Kufam_800ExtraBold_Italic,
-    Kufam_800ExtraBold,
-    Kufam_900Black_Italic,
-    Kufam_900Black,
+    Play_400Regular,
+    Play_700Bold,
   });
 
   const colorScheme = useColorScheme();

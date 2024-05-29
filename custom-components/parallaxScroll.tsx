@@ -23,7 +23,7 @@ import { Link } from "expo-router";
 import { CenterHorizontalFull, Flex, VStack } from "./containers";
 import { screenHeight } from "@/constants/variousConstants";
 import { MyComponentView } from "./componentView";
-import { boldAccent, semiBoldAccent } from "@/constants/FontVariables";
+import { boldAccentFont } from "@/constants/FontVariables";
 
 export type headerTextSizes =
   | "sm"
@@ -217,9 +217,7 @@ export default function CustomParallaxScroll({
                     textShadows.glow900Lg,
                     {
                       color: headerTextColor,
-                      fontFamily: headerTextContainer
-                        ? semiBoldAccent
-                        : boldAccent,
+                      fontFamily: boldAccentFont,
                       padding: 0,
                     },
                   ],
@@ -235,9 +233,7 @@ export default function CustomParallaxScroll({
                     textShadows.glow900Lg,
                     {
                       color: headerTextColor,
-                      fontFamily: headerTextContainer
-                        ? semiBoldAccent
-                        : boldAccent,
+                      fontFamily: boldAccentFont,
                       padding: 0,
                     },
                   ],

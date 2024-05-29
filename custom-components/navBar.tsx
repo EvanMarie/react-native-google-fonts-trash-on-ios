@@ -8,6 +8,7 @@ import { bordersT } from "@/constants/BorderStyles";
 import { GradientSeven, GradientTwo } from "@/constants/Gradients";
 import { screenWidth } from "@/constants/variousConstants";
 import { LinearGradient } from "expo-linear-gradient";
+import { boldAccentFont } from "@/constants/FontVariables";
 
 type navItemType = {
   icon?: string;
@@ -46,6 +47,7 @@ function NavItem({
         )}
         <Text
           style={{
+            fontFamily: boldAccentFont,
             fontSize: 12,
             padding: 0,
             color: isActive ? activeIconColor : inactiveIconColor,

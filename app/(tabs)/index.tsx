@@ -1,6 +1,6 @@
 import { defaultImage } from "@/assets/imageExports";
 import { col } from "@/constants/Colors";
-import { semiBoldAccent } from "@/constants/FontVariables";
+import { boldAccentFont } from "@/constants/FontVariables";
 import { textShadows } from "@/constants/ShadowStyles";
 import { screenHeight, screenWidth } from "@/constants/variousConstants";
 import { VStack } from "@/custom-components/containers";
@@ -33,7 +33,7 @@ export default function Design() {
             style={{ textAlign: "center" }}
             textColor={col[900]}
             textShadow={textShadows.glow100Lg}
-            fontFamily={semiBoldAccent}
+            fontFamily={boldAccentFont}
           >
             React Native
           </Heading4xl>
@@ -41,7 +41,7 @@ export default function Design() {
             style={{ textAlign: "center" }}
             textColor={col[900]}
             textShadow={textShadows.glow100Lg}
-            fontFamily={semiBoldAccent}
+            fontFamily={boldAccentFont}
           >
             Design Template
           </Heading3xl>
