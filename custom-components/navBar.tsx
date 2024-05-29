@@ -5,6 +5,9 @@ import { Text } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { usePathname, useRouter } from "expo-router";
 import { bordersT } from "@/constants/BorderStyles";
+import { GradientSeven, GradientTwo } from "@/constants/Gradients";
+import { screenWidth } from "@/constants/variousConstants";
+import { LinearGradient } from "expo-linear-gradient";
 
 type navItemType = {
   icon?: string;
@@ -15,8 +18,8 @@ type navItemType = {
 function NavItem({
   icon,
   iconSize = 23,
-  inactiveIconColor = col[180],
-  activeIconColor = col[200],
+  inactiveIconColor = col[790],
+  activeIconColor = col[900],
   label,
   pathname,
 }: {
@@ -56,21 +59,24 @@ function NavItem({
 }
 
 export default function MyNavBar({
-  bg = col[700],
+  // bg = col[700],
   borderTop = bordersT.borderTxs700,
   height = 60,
   navItems,
 }: {
-  bg?: string;
+  // bg?: string;
   borderTop?: any;
   height?: number;
   navItems: navItemType[];
 }) {
   return (
-    <FlexFull
+    <LinearGradient
+      colors={[col[600], col[500]]}
       style={[
         borderTop,
         {
+          display: "flex",
+          width: screenWidth,
           height: height,
           paddingHorizontal: 10,
           paddingVertical: 5,
@@ -78,20 +84,26 @@ export default function MyNavBar({
           bottom: 0,
           right: 0,
           left: 0,
-          backgroundColor: bg,
           zIndex: 1,
-          justifyContent: "space-around",
         },
       ]}
     >
-      {navItems.map((navItem, index) => (
-        <NavItem
-          key={index}
-          icon={navItem.icon}
-          label={navItem.label}
-          pathname={navItem.pathname}
-        />
-      ))}
-    </FlexFull>
+      <FlexFull
+        style={[
+          {
+            justifyContent: "space-around",
+          },
+        ]}
+      >
+        {navItems.map((navItem, index) => (
+          <NavItem
+            key={index}
+            icon={navItem.icon}
+            label={navItem.label}
+            pathname={navItem.pathname}
+          />
+        ))}
+      </FlexFull>
+    </LinearGradient>
   );
 }

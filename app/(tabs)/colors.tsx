@@ -1,4 +1,4 @@
-import { GradientFive } from "@/constants/Gradients";
+import { GradientFive, GradientSeven } from "@/constants/Gradients";
 
 import { VStackFull } from "@/custom-components/containers";
 import {
@@ -11,7 +11,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Design() {
   return (
-    <GradientFive style={{ display: "flex", flex: 1 }}>
+    <GradientSeven style={{ display: "flex", flex: 1 }}>
       <ScrollView>
         <SafeAreaView style={{ width: "100%" }}>
           <VStackFull style={{ gap: 20, paddingTop: 10, paddingBottom: 55 }}>
@@ -21,6 +21,6 @@ export default function Design() {
           </VStackFull>
         </SafeAreaView>
       </ScrollView>
-    </GradientFive>
+    </GradientSeven>
   );
 }

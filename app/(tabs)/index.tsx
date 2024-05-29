@@ -1,16 +1,24 @@
+import { defaultImage } from "@/assets/imageExports";
 import { col } from "@/constants/Colors";
-import { GradientFive } from "@/constants/Gradients";
 import { textShadows } from "@/constants/ShadowStyles";
-import { screenHeight } from "@/constants/variousConstants";
-import { FlexFull } from "@/custom-components/containers";
-
+import { screenHeight, screenWidth } from "@/constants/variousConstants";
+import { VStack } from "@/custom-components/containers";
+import MyImageBackground from "@/custom-components/imageBackground";
 import { Heading3xl, Heading4xl } from "@/custom-components/textComponents";
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function Design() {
   return (
-    <FlexFull style={{ height: screenHeight }}>
-      <GradientFive
+    <MyImageBackground
+      image={defaultImage}
+      style={{ height: screenHeight }}
+      borderRadius={5}
+    >
+      <LinearGradient
+        colors={[col[220], col[320]]}
         style={{
+          width: screenWidth,
+          height: screenHeight,
           display: "flex",
           flexDirection: "row",
           flex: 1,
@@ -19,23 +27,25 @@ export default function Design() {
           alignItems: "center",
         }}
       >
-        <Heading4xl
-          style={{ textAlign: "center" }}
-          textColor={col[900]}
-          textShadow={textShadows.glow100Lg}
-          fontFamily="Kufam_600SemiBold"
-        >
-          React Native
-        </Heading4xl>
-        <Heading3xl
-          style={{ textAlign: "center" }}
-          textColor={col[900]}
-          textShadow={textShadows.glow100Lg}
-          fontFamily="Kufam_600SemiBold"
-        >
-          Design Examples
-        </Heading3xl>
-      </GradientFive>
-    </FlexFull>
+        <VStack>
+          <Heading4xl
+            style={{ textAlign: "center" }}
+            textColor={col[900]}
+            textShadow={textShadows.glow100Lg}
+            fontFamily="Kufam_600SemiBold"
+          >
+            React Native
+          </Heading4xl>
+          <Heading3xl
+            style={{ textAlign: "center" }}
+            textColor={col[900]}
+            textShadow={textShadows.glow100Lg}
+            fontFamily="Kufam_600SemiBold"
+          >
+            Design Template
+          </Heading3xl>
+        </VStack>
+      </LinearGradient>
+    </MyImageBackground>
   );
 }
