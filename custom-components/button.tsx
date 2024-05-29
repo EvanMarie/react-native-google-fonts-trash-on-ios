@@ -1,4 +1,4 @@
-import { col } from "@/constants/Colors";
+import { buttonBg, col } from "@/constants/Colors";
 import React, { useState } from "react";
 import { TouchableOpacity, StyleProp, ViewStyle, View } from "react-native";
 import { TextMd, TextSm } from "./textComponents";
@@ -7,6 +7,7 @@ import { borders } from "@/constants/BorderStyles";
 import { Ionicons } from "@expo/vector-icons";
 import BouncingDots from "./bouncingDots";
 import CustomAlert from "./alert";
+import { boldAccent } from "@/constants/FontVariables";
 
 interface CustomButtonProps {
   onPress?: () => void;
@@ -35,7 +36,7 @@ export default function MyButton({
   confirmText,
   cancelText,
 }: CustomButtonProps) {
-  const [bg, setBg] = useState(col["light"]);
+  const [bg, setBg] = useState(buttonBg);
   const [color, setColor] = useState(col[900]);
 
   const onPressButton = () => {
@@ -101,7 +102,7 @@ export default function MyButton({
                 {
                   color: color,
                   borderRadius: 25,
-                  fontFamily: "Kufam_700Bold",
+                  fontFamily: boldAccent,
                   paddingTop: 5,
                   paddingBottom: 0,
                 },

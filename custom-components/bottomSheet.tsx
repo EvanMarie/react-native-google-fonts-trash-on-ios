@@ -12,6 +12,7 @@ import {
 import { screenHeight } from "@/constants/variousConstants";
 import { col } from "@/constants/Colors";
 import { boxShadows } from "@/constants/ShadowStyles";
+import { semiBoldAccent } from "@/constants/FontVariables";
 
 export default function BottomSheet({
   children,
@@ -28,7 +29,7 @@ export default function BottomSheet({
   openText = "Open",
   closeText = "Close",
   textStyle = {},
-  headerFontFamily = "Kufam_600SemiBold",
+  headerFontFamily = semiBoldAccent,
   height = screenHeight / 4,
   shadow = boxShadows.glowSm600,
 }: {

@@ -23,6 +23,7 @@ import { Link } from "expo-router";
 import { CenterHorizontalFull, Flex, VStack } from "./containers";
 import { screenHeight } from "@/constants/variousConstants";
 import { MyComponentView } from "./componentView";
+import { boldAccent, semiBoldAccent } from "@/constants/FontVariables";
 
 export type headerTextSizes =
   | "sm"
@@ -217,8 +218,8 @@ export default function CustomParallaxScroll({
                     {
                       color: headerTextColor,
                       fontFamily: headerTextContainer
-                        ? "Kufam_600SemiBold"
-                        : "Kufam_700Bold",
+                        ? semiBoldAccent
+                        : boldAccent,
                       padding: 0,
                     },
                   ],
@@ -235,8 +236,8 @@ export default function CustomParallaxScroll({
                     {
                       color: headerTextColor,
                       fontFamily: headerTextContainer
-                        ? "Kufam_600SemiBold"
-                        : "Kufam_700Bold",
+                        ? semiBoldAccent
+                        : boldAccent,
                       padding: 0,
                     },
                   ],

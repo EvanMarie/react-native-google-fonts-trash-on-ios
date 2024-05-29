@@ -9,6 +9,7 @@ import { boxShadows, textShadows } from "@/constants/ShadowStyles";
 import { HeadingLg, HeadingSm, HeadingXs, TextSm } from "./textComponents";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { VStackFull } from "./containers";
+import { semiBoldAccent } from "@/constants/FontVariables";
 
 interface CustomAlertProps {
   isVisible: boolean;
@@ -122,16 +123,14 @@ export default function MyAlert({
                 style={[boxShadows.glowSm500, styles.confirm]}
                 onPress={handleConfirm}
               >
-                <HeadingXs fontFamily="Kufam_600SemiBold">
-                  {confirmText}
-                </HeadingXs>
+                <HeadingXs fontFamily={semiBoldAccent}>{confirmText}</HeadingXs>
               </TouchableOpacity>
               <TouchableOpacity
                 style={[boxShadows.glowLg900, styles.cancel]}
                 onPress={onClose}
               >
                 <HeadingXs
-                  fontFamily="Kufam_600SemiBold"
+                  fontFamily={semiBoldAccent}
                   textColor={col[900]}
                   textShadow={textShadows.glow100Sm}
                 >

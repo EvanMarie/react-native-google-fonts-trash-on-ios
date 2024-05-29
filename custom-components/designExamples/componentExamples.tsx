@@ -98,10 +98,10 @@ export function ButtonExamples() {
           <CustomButton icon="home" text="Home" />
         </CenterHorizontalFull>
         <CenterHorizontalFull>
-          <CustomLinkButton text="CustomLinkButton" pathname="/(tabs)/test" />
+          <CustomLinkButton text="CustomLinkButton" pathname="" />
         </CenterHorizontalFull>
         <CenterHorizontalFull>
-          <CustomLinkIconButton iconName="home" pathname="/(tabs)/test" />
+          <CustomLinkIconButton iconName="home" pathname="" />
         </CenterHorizontalFull>
       </VStackFull>
     </CenterHorizontalFull>

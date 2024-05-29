@@ -1,4 +1,4 @@
-import { col } from "@/constants/Colors";
+import { buttonBg, col } from "@/constants/Colors";
 import React, { useState } from "react";
 import { Alert, StyleProp, Text, Touchable, ViewStyle } from "react-native";
 import { TextSm } from "./textComponents";
@@ -11,6 +11,7 @@ import CustomAlert from "./alert";
 import CustomButton from "./button";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import BouncingDots from "./bouncingDots";
+import { boldAccent } from "@/constants/FontVariables";
 
 type paramsType = { [key: string]: string };
 
@@ -43,7 +44,7 @@ export default function MyLinkButton({
   onPress,
   isLoading,
 }: MyLinkButtonProps) {
-  const [bg, setBg] = useState(col["light"]);
+  const [bg, setBg] = useState(buttonBg);
   const [color, setColor] = useState(col[900]);
   const [alertVisible, setAlertVisible] = useState(false);
   const router = useRouter();
@@ -103,7 +104,7 @@ export default function MyLinkButton({
                   {
                     color: color,
                     borderRadius: 25,
-                    fontFamily: "Kufam_700Bold",
+                    fontFamily: boldAccent,
                     paddingTop: 5,
                     paddingBottom: 0,
                   },

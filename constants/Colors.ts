@@ -101,6 +101,7 @@ export const col= {
           990: "rgba(9, 14, 56, 0.9)",
         }
 
+        export const buttonBg = col[500];
 const tintColorLight = col[500];
 const tintColorDark = col[300];
 
