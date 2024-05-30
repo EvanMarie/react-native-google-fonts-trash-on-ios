@@ -35,7 +35,7 @@ export default function Design() {
             textShadow={textShadows.glow100Lg}
             fontFamily={boldAccentFont}
           >
-            React Native
+            React Native / Expo
           </Heading4xl>
           <Heading3xl
             style={{ textAlign: "center" }}

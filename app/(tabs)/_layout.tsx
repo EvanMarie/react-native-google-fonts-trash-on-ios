@@ -7,14 +7,21 @@ import React from "react";
 
 export default function TabLayout() {
   const testNavItems = [
-    { icon: "home", label: "home", pathname: "/" },
     {
-      icon: "color-palette-outline",
+      inactiveIcon: "home-outline",
+      activeIcon: "home",
+      label: "home",
+      pathname: "/",
+    },
+    {
+      inactiveIcon: "color-palette-outline",
+      activeIcon: "color-palette",
       label: "theme",
       pathname: "/colors",
     },
     {
-      icon: "grid-outline",
+      inactiveIcon: "grid-outline",
+      activeIcon: "grid",
       label: "components",
       pathname: "/components",
     },

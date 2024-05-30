@@ -5,26 +5,28 @@ import { Text } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { usePathname, useRouter } from "expo-router";
 import { bordersT } from "@/constants/BorderStyles";
-import { GradientSeven, GradientTwo } from "@/constants/Gradients";
 import { screenWidth } from "@/constants/variousConstants";
 import { LinearGradient } from "expo-linear-gradient";
 import { boldAccentFont } from "@/constants/FontVariables";
 
 type navItemType = {
-  icon?: string;
+  inactiveIcon?: string;
+  activeIcon?: string;
   label: string;
   pathname: string;
 };
 
 function NavItem({
-  icon,
+  activeIcon,
+  inactiveIcon,
   iconSize = 23,
   inactiveIconColor = col[790],
   activeIconColor = col[900],
   label,
   pathname,
 }: {
-  icon?: string;
+  activeIcon?: string;
+  inactiveIcon?: string;
   iconSize?: number;
   inactiveIconColor?: string;
   activeIconColor?: string;
@@ -38,9 +40,9 @@ function NavItem({
   return (
     <TouchableOpacity onPress={() => router.push(pathname)}>
       <VStack style={{ alignItems: "center" }}>
-        {icon && (
+        {inactiveIcon && (
           <Ionicons
-            name={icon as any}
+            name={isActive ? activeIcon : (inactiveIcon as any)}
             size={iconSize}
             color={isActive ? activeIconColor : inactiveIconColor}
           />
@@ -100,7 +102,8 @@ export default function MyNavBar({
         {navItems.map((navItem, index) => (
           <NavItem
             key={index}
-            icon={navItem.icon}
+            activeIcon={navItem.activeIcon}
+            inactiveIcon={navItem.inactiveIcon}
             label={navItem.label}
             pathname={navItem.pathname}
           />
