@@ -1,17 +1,61 @@
 import React, { useRef, useState } from "react";
-import {
-  View,
-  ScrollView,
-  Animated,
-  StyleSheet,
-  Dimensions,
-} from "react-native";
+import { View, ScrollView, Animated, StyleSheet } from "react-native";
 import { screenHeight, screenWidth } from "@/constants/variousConstants";
 import { VStackFull } from "./containers";
+import { col } from "@/constants/Colors";
 
-export default function ScrollProgress() {
+export default function ScrollProgress({
+  children,
+  position = "absolute",
+  top,
+  right,
+  left,
+  bottom,
+  color = col[900],
+}: {
+  children: React.ReactNode;
+  position?: "absolute" | "relative";
+  top?: number;
+  right?: number;
+  left?: number;
+  bottom?: number;
+  color?: string;
+}) {
   const scrollY = useRef(new Animated.Value(0)).current;
   const [contentHeight, setContentHeight] = useState(0);
+
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      position: "relative",
+      paddingTop: 50,
+    },
+    scrollContainer: {
+      flexDirection: "column",
+    },
+    content: {
+      width: screenWidth - 40,
+      marginHorizontal: 20,
+      backgroundColor: "lightblue",
+      height: screenHeight * 0.5,
+      borderRadius: 10,
+    },
+    progressContainer: {
+      height: 5,
+      backgroundColor: "lightgray",
+      width: screenWidth,
+      zIndex: 1,
+    },
+    progressBar: {
+      height: 5,
+      backgroundColor: color,
+      position: position,
+      top: top,
+      left: left,
+      right: right,
+      bottom: bottom,
+    },
+  });
 
   return (
     <View style={styles.container}>
@@ -42,45 +86,9 @@ export default function ScrollProgress() {
         onContentSizeChange={(width, height) => setContentHeight(height)}
       >
         <VStackFull style={{ gap: 10, paddingVertical: 10 }}>
-          <View style={styles.content} />
-          <View style={styles.content} />
-          <View style={styles.content} />
-          <View style={styles.content} />
-          <View style={styles.content} />
+          {children}
         </VStackFull>
       </ScrollView>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    position: "relative",
-    paddingTop: 50,
-  },
-  scrollContainer: {
-    flexDirection: "column",
-  },
-  content: {
-    width: screenWidth - 40,
-    marginHorizontal: 20,
-    backgroundColor: "lightblue",
-    height: screenHeight * 0.5,
-    borderRadius: 10,
-  },
-  progressContainer: {
-    height: 5,
-    backgroundColor: "lightgray",
-    width: screenWidth,
-    // position: "absolute",
-    // top: 100,
-    // right: 0,
-    // left: 0,
-    zIndex: 1,
-  },
-  progressBar: {
-    height: 5,
-    backgroundColor: "red",
-  },
-});

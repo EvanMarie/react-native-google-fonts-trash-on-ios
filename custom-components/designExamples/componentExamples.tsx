@@ -149,7 +149,8 @@ export function ModalExample() {
         animation="slide"
       >
         <GradientThree style={{ height: screenHeight }}>
-          <CustomScrollView>
+          {/* <CustomScrollView> */}
+          <ScrollProgress top={0} right={0} left={0}>
             <VStackFull
               style={{
                 height: "100%",
@@ -164,8 +165,10 @@ export function ModalExample() {
                 <ModalContent />
                 <ModalContent />
                 <ModalContent />
+                <ModalContent />
+                <ModalContent />
+                <ModalContent />
               </VStackFull>
-
               <TouchableOpacity
                 onPress={() => setModalVisible(false)}
                 style={[
@@ -181,7 +184,8 @@ export function ModalExample() {
                 <TextLg textColor={col[900]}>close me</TextLg>
               </TouchableOpacity>
             </VStackFull>
-          </CustomScrollView>
+          </ScrollProgress>
+          {/* </CustomScrollView> */}
         </GradientThree>
       </CustomModal>
     </CenterHorizontalFull>
@@ -416,15 +420,6 @@ export function BottomSheetExample() {
       <BottomSheet>
         <TextXl textColor={col[900]}> I am the bottom sheet content!</TextXl>
       </BottomSheet>
-    </VStackFull>
-  );
-}
-
-export function ScrollProgressExample() {
-  return (
-    <VStackFull>
-      <HeadingLg>Scroll Progress Example</HeadingLg>
-      <ScrollProgress />
     </VStackFull>
   );
 }
