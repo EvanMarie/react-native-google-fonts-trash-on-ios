@@ -13,7 +13,8 @@ export default function Design() {
     <MyImageBackground
       image={defaultImage}
       style={{ height: screenHeight }}
-      borderRadius={5}
+      blur={4}
+      borderRadius={0}
     >
       <LinearGradient
         colors={[col[220], col[320]]}
