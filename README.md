@@ -4,12 +4,12 @@ This is a feature-rich template for building React Native apps with Expo and Typ
 
 ## Screenshots
 
-![React Native Template Screenshot 1](https://www.evanmarie.com/content/files/images/react-native-template/native-template-1.webp)
-![React Native Template Screenshot 2](https://www.evanmarie.com/content/files/images/react-native-template/native-template-2.webp)
-![React Native Template Screenshot 3](https://www.evanmarie.com/content/files/images/react-native-template/native-template-3.webp)
-![React Native Template Screenshot 4](https://www.evanmarie.com/content/files/images/react-native-template/native-template-4.webp)
-![React Native Template Screenshot 5](https://www.evanmarie.com/content/files/images/react-native-template/native-template-5.webp)
-![React Native Template Screenshot 5](https://www.evanmarie.com/content/files/images/react-native-template/native-template-6.webp)
+![React Native Template Screenshot 1](https://www.evanmarie.com/content/files/images/react-native-template/native-template-1.webp){:width="400px"}
+![React Native Template Screenshot 2](https://www.evanmarie.com/content/files/images/react-native-template/native-template-2.webp){:width="400px"}
+![React Native Template Screenshot 3](https://www.evanmarie.com/content/files/images/react-native-template/native-template-3.webp){:width="400px"}
+![React Native Template Screenshot 4](https://www.evanmarie.com/content/files/images/react-native-template/native-template-4.webp){:width="400px"}
+![React Native Template Screenshot 5](https://www.evanmarie.com/content/files/images/react-native-template/native-template-5.webp){:width="400px"}
+![React Native Template Screenshot 5](https://www.evanmarie.com/content/files/images/react-native-template/native-template-6.webp){:width="400px"}
 
 ## Features
 
