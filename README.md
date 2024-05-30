@@ -4,7 +4,7 @@ This is a feature-rich template for building React Native apps with Expo and Typ
 
 ## Screenshots
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; width: 100%; justify-content: space-evenly;">
 <img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-1.webp" alt="react native template image 1" width="350"/>
 
 <img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-2.webp" alt="react native template image 2" width="350"/>
