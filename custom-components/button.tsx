@@ -1,7 +1,13 @@
-import { buttonBg, col } from "@/constants/Colors";
+import {
+  buttonBg,
+  buttonPressBg,
+  buttonPressText,
+  buttonText,
+  col,
+} from "@/constants/Colors";
 import React, { useState } from "react";
 import { TouchableOpacity, StyleProp, ViewStyle, View } from "react-native";
-import { TextMd, TextSm } from "./textComponents";
+import { TextSm } from "./textComponents";
 import { boxShadows, textShadows } from "@/constants/ShadowStyles";
 import { borders } from "@/constants/BorderStyles";
 import { Ionicons } from "@expo/vector-icons";
@@ -50,13 +56,13 @@ export default function MyButton({
   };
 
   const handlePressIn = () => {
-    setBg(col[400]);
-    setColor(col[100]);
+    setBg(buttonPressBg);
+    setColor(buttonPressText);
   };
 
   const handlePressOut = () => {
-    setBg(col["light"]);
-    setColor(col[900]);
+    setBg(buttonBg);
+    setColor(buttonText);
   };
   const [alertVisible, setAlertVisible] = useState(false);
   return (

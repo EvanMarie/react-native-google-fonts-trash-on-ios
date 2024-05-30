@@ -21,7 +21,7 @@ interface BouncingDotsProps {
 }
 
 const BouncingDots: React.FC<BouncingDotsProps> = ({
-  color = col[400],
+  color = col[300],
   dotSize = 10,
   dotCount = 5,
   dotGap = 10,

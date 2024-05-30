@@ -1,50 +1,55 @@
-# Welcome to your Expo app 👋
+# React Native Expo Template
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a feature-rich template for building React Native apps with Expo and TypeScript. It provides a solid foundation to help you hit the ground running on your next mobile app project.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 11 built-in color gradients to easily style your app
+- Well-organized color scheme setup
+- A variety of pre-built custom components, including:
+  - ActiveInactiveToggleButton
+  - Alert
+  - AnimatedImage
+  - BottomSheet
+  - BouncingDots
+  - Button
+  - Collapsible
+  - ColorfulContainer
+  - ComponentView
+  - Containers
+  - and many more! See `/app/custom-components` folder for full list.
+- Hooks, iOS and Android specific code, scripts and more
+- TypeScript support for improved developer experience and code quality
 
-   ```bash
-   npm install
-   ```
+## Getting Started
 
-2. Start the app
+1. Clone this repository
+2. Run `npm install` to install dependencies
+3. Run `npx expo start` to launch the Expo development server
+4. Follow the Expo prompts to launch the app on a device or simulator
 
-   ```bash
-    npx expo start
-   ```
+## Color Scheme
 
-In the output, you'll find options to open the app in a
+This template organizes colors intuitively to streamline styling your app. It includes 11 pre-configured gradients that can easily be used on any component. See the `Colors.ts` file for the full list of available colors and gradients.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Custom Components
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+I've built a library of reusable custom components to accelerate app development. Browse the `/app/custom-components` directory to see the available components. Import them into your screens and use them just like any other component.
 
-## Get a fresh project
+## Project Structure
 
-When you're ready, run:
+- `/app` - Main source code
+  - `/assets` - Images, fonts and other static assets
+  - `/custom-components` - Reusable custom components
+  - `/constants` - Constants and configuration
+  - `/screens` - App screen components
+- `/hooks` - Custom React hooks
+- `/ios` - iOS native code
+- `/android` - Android native code
 
-```bash
-npm run reset-project
-```
+## Expo Commands
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This template uses the latest version of Expo. Instead of `expo start`, use:
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `npx expo start` - Launch the Expo development server
+- `npx expo <command>` - Run any other Expo command

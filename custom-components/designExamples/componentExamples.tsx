@@ -46,6 +46,7 @@ import {
   imageExample4,
   imageExample5,
 } from "@/assets/imageExports";
+import BouncingDots from "../bouncingDots";
 
 export function ToggleSwitchesExample() {
   const [smToggleOn, setSmToggleOn] = useState(false);
@@ -424,6 +425,15 @@ export function ScrollProgressExample() {
     <VStackFull>
       <HeadingLg>Scroll Progress Example</HeadingLg>
       <ScrollProgress />
+    </VStackFull>
+  );
+}
+
+export function BouncingDotsExample() {
+  return (
+    <VStackFull>
+      <HeadingLg>Bouncing Dots Indicator</HeadingLg>
+      <BouncingDots />
     </VStackFull>
   );
 }

@@ -101,7 +101,11 @@ export const col= {
           990: "rgba(9, 14, 56, 0.9)",
         }
 
-        export const buttonBg = col[500];
+export const buttonBg = col[500];
+export const buttonText = col[800];
+export const buttonPressBg = col[800];
+export const buttonPressText = col[100];
+
 const tintColorLight = col[500];
 const tintColorDark = col[300];
 

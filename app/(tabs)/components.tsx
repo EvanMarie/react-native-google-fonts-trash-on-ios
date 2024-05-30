@@ -2,6 +2,7 @@ import { GradientEight, GradientFive } from "@/constants/Gradients";
 import {
   AlertExample,
   BottomSheetExample,
+  BouncingDotsExample,
   ButtonExamples,
   CustomExpandableImageExample,
   CustomExpandableTextExample,
@@ -46,6 +47,8 @@ export default function DesignComponents() {
             <ExpandableImageExample />
             <Divider />
             <CustomImageBackgroundExample />
+            <Divider />
+            <BouncingDotsExample />
             <Divider />
             <SegmentedButtonBarExample />
             <Divider />
