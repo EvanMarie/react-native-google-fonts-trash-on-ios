@@ -2,6 +2,15 @@
 
 This is a feature-rich template for building React Native apps with Expo and TypeScript. It provides a solid foundation to help you hit the ground running on your next mobile app project.
 
+## Screenshots
+
+![React Native Template Screenshot 1](http://www.evanmarie.com/content.files/images/react-native-template/native-template-1.webp)
+![React Native Template Screenshot 2](http://www.evanmarie.com/content.files/images/react-native-template/native-template-2.webp)
+![React Native Template Screenshot 3](http://www.evanmarie.com/content.files/images/react-native-template/native-template-3.webp)
+![React Native Template Screenshot 4](http://www.evanmarie.com/content.files/images/react-native-template/native-template-4.webp)
+![React Native Template Screenshot 5](http://www.evanmarie.com/content.files/images/react-native-template/native-template-5.webp)
+![React Native Template Screenshot 5](http://www.evanmarie.com/content.files/images/react-native-template/native-template-6.webp)
+
 ## Features
 
 - 11 built-in color gradients to easily style your app
