@@ -4,17 +4,19 @@ This is a feature-rich template for building React Native apps with Expo and Typ
 
 ## Screenshots
 
-<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-1.webp" alt="react native template image 1" width="400"/>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-1.webp" alt="react native template image 1" width="350"/>
 
-<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-2.webp" alt="react native template image 2" width="400"/>
+<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-2.webp" alt="react native template image 2" width="350"/>
 
-<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-3.webp" alt="react native template image 3" width="400"/>
+<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-3.webp" alt="react native template image 3" width="350"/>
 
-<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-4.webp" alt="react native template image 4" width="400"/>
+<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-4.webp" alt="react native template image 4" width="350"/>
 
-<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-5.webp" alt="react native template image 5" width="400"/>
+<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-5.webp" alt="react native template image 5" width="350"/>
 
-<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-6.webp" alt="react native template image 6" width="400"/>
+<img src="https://www.evanmarie.com/content/files/images/react-native-template/native-template-6.webp" alt="react native template image 6" width="350"/>
+</div>
 
 ## Features
 
